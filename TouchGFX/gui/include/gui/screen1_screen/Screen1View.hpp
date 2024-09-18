@@ -3,6 +3,8 @@
 
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include "gui/common/TestVariables.hpp"
+#include "test.h"
 
 class Screen1View : public Screen1ViewBase
 {
@@ -13,6 +15,9 @@ public:
     virtual void tearDownScreen();
     virtual void handleTickEvent();
     void adcShow();
+    int tickCounter;
+//    void temperatureGauge();
+
 protected:
 };
 

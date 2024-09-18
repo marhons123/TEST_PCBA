@@ -24,8 +24,11 @@
 #include "dac.h"
 #include "dma.h"
 #include "dma2d.h"
+#include "fatfs.h"
 #include "ltdc.h"
 #include "rtc.h"
+#include "sdio.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -34,7 +37,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "test.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -55,8 +59,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-#define BATCH_DATA_LEN 3
-uint32_t dmaDateBuffer[BATCH_DATA_LEN];
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -77,6 +80,7 @@ void MX_FREERTOS_Init(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -105,29 +109,35 @@ int main(void)
   MX_CRC_Init();
   MX_LTDC_Init();
   MX_ADC1_Init();
-  MX_DAC_Init();
   MX_USART1_UART_Init();
   MX_RTC_Init();
   MX_TIM3_Init();
+  MX_DAC_Init();
+  MX_SPI5_Init();
+  MX_SDIO_SD_Init();
+  MX_FATFS_Init();
   MX_TouchGFX_Init();
   /* Call PreOsInit function */
   MX_TouchGFX_PreOSInit();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin,GPIO_PIN_SET);
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin,GPIO_PIN_SET);
-
 //  HAL_ADC_Start_IT(&hadc1);//中断方式启动ADC
-  HAL_ADC_Start_DMA(&hadc1, dmaDateBuffer, BATCH_DATA_LEN);//DMA方式启动ADC
+  HAL_ADC_Start_DMA(&hadc1, adc_buffer, ADC_BUFFER_SIZE * 3);//DMA方式启动ADC ,TIM3触发
   HAL_TIM_Base_Start(&htim3);//启动TIM3中断
-
+//  HAL_DAC_Start(&hdac,DAC_CHANNEL_1);//
+//  HAL_TIM_Base_Start(&htim2);
   /* USER CODE END 2 */
 
-  /* Call init function for freertos objects (in freertos.c) */
+  /* Init scheduler */
+  osKernelInitialize();
+
+  /* Call init function for freertos objects (in cmsis_os2.c) */
   MX_FREERTOS_Init();
 
   /* Start scheduler */
   osKernelStart();
+
   /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -153,7 +163,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -163,18 +173,11 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 25;
-  RCC_OscInitStruct.PLL.PLLN = 360;
+  RCC_OscInitStruct.PLL.PLLM = 15;
+  RCC_OscInitStruct.PLL.PLLN = 144;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.PLL.PLLQ = 5;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Activate the Over-Drive mode
-  */
-  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
@@ -188,36 +191,13 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3) != HAL_OK)
   {
     Error_Handler();
   }
 }
 
 /* USER CODE BEGIN 4 */
-//中断形式启动ADC
-//__weak void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
-//			if (hadc->Instance == ADC1) {
-//				val = HAL_ADC_GetValue(&hadc1);
-//				volt = 3.3f * val / 4096;
-//			}
-//		}
-//中断形式启动ADC DMA
-__weak void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
-	float dmaVolt;
-	for (uint8_t i = 0; i < BATCH_DATA_LEN; ++i) {
-		val = dmaDateBuffer[i];
-		dmaVolt = 3.3f * val / 4096;
-		if (i % 3 == 0) {
-			volt = dmaVolt;
-		} else if (i % 3 == 1) {
-			vrefint = dmaVolt;
-		} else if (i % 3 == 2) {
-			vbat = dmaVolt;
-			temperate=(dmaVolt-0.76)/0.0025 + 25; //转换为温度值
-		}
-	}
-}
 
 /* USER CODE END 4 */
 

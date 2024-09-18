@@ -29,7 +29,8 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+extern uint16_t dacValue;
+extern float dacOut1;
 /* USER CODE END Includes */
 
 extern DAC_HandleTypeDef hdac;

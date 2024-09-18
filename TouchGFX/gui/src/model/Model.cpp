@@ -5,8 +5,7 @@
 //#include <main.h>
 //#endif
 
-Model::Model() :
-		modelListener(0) //永远指向当前显示的界面
+Model::Model() : modelListener(0) //永远指向当前显示的界面
 {
 
 }

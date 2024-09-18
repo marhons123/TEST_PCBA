@@ -41,7 +41,7 @@ extern uint16_t key_cont_interval;
 
 
 //º¯ÊıÉêÃ÷
-void KEY_Init(void);
+//void KEY_Init(void);
 KEY KEY_Scan(void);
 void KEY_SetContInterval(uint16_t interval);
 void KEY_SetContSta(KEY key,uint8_t sta);

@@ -17,25 +17,67 @@ public:
 
     virtual void changeToStartScreen()
     {
-        gotoscreenScreenNoTransition();
+        gotoScreen0ScreenNoTransition();
     }
 
-    // screen
-    void gotoscreenScreenNoTransition();
+    // Screen0
+    void gotoScreen0ScreenNoTransition();
+
+    // FastTest
+    void gotoFastTestScreenNoTransition();
+
+    // SlowTest
+    void gotoSlowTestScreenNoTransition();
+
+    // Setting
+    void gotoSettingScreenNoTransition();
 
     // Screen1
     void gotoScreen1ScreenNoTransition();
+
+    // Screen2
+    void gotoScreen2ScreenNoTransition();
+
+    // Screen3
+    void gotoScreen3ScreenNoTransition();
+
+    // Screen4
+    void gotoScreen4ScreenNoTransition();
+
+    // Screen5
+    void gotoScreen5ScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
     Model& model;
 
-    // screen
-    void gotoscreenScreenNoTransitionImpl();
+    // Screen0
+    void gotoScreen0ScreenNoTransitionImpl();
+
+    // FastTest
+    void gotoFastTestScreenNoTransitionImpl();
+
+    // SlowTest
+    void gotoSlowTestScreenNoTransitionImpl();
+
+    // Setting
+    void gotoSettingScreenNoTransitionImpl();
 
     // Screen1
     void gotoScreen1ScreenNoTransitionImpl();
+
+    // Screen2
+    void gotoScreen2ScreenNoTransitionImpl();
+
+    // Screen3
+    void gotoScreen3ScreenNoTransitionImpl();
+
+    // Screen4
+    void gotoScreen4ScreenNoTransitionImpl();
+
+    // Screen5
+    void gotoScreen5ScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

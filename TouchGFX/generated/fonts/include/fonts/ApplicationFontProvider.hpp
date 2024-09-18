@@ -17,15 +17,27 @@ struct Typography
     static const touchgfx::FontId LARGE = 1;
     static const touchgfx::FontId SMALL = 2;
     static const touchgfx::FontId TYPOGRAPHY_00 = 3;
+    static const touchgfx::FontId MAIN = 4;
+    static const touchgfx::FontId OK_NG = 5;
+    static const touchgfx::FontId TITLE = 6;
+    static const touchgfx::FontId DISPLAY = 7;
+    static const touchgfx::FontId MODE = 8;
+    static const touchgfx::FontId KEYBOARD = 9;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0;       // STFANGSO_TTF_20_4bpp
-    static const touchgfx::FontId LARGE = 1;         // verdana_40_4bpp
+    static const touchgfx::FontId DEFAULT = 0;       // SIMYOU_TTF_20_4bpp
+    static const touchgfx::FontId LARGE = 1;         // STKAITI_TTF_40_4bpp
     static const touchgfx::FontId SMALL = 2;         // verdana_10_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_00 = 3; // STSONG_TTF_40_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 4;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 3; // STSONG_TTF_30_4bpp
+    static const touchgfx::FontId MAIN = 4;          // STZHONGS_TTF_25_4bpp
+    static const touchgfx::FontId OK_NG = 5;         // STZHONGS_TTF_120_4bpp
+    static const touchgfx::FontId TITLE = 6;         // courbd_40_4bpp
+    static const touchgfx::FontId DISPLAY = 7;       // verdanab_20_4bpp
+    static const touchgfx::FontId MODE = 7;          // verdanab_20_4bpp
+    static const touchgfx::FontId KEYBOARD = 8;      // verdana_20_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 9;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

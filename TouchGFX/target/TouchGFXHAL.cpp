@@ -28,7 +28,6 @@
 #include "sdram.h"
 #include "main.h"
 //#include "KeyController.hpp"
-#include "w25qxx.h"
 
 using namespace touchgfx;
 //static KeyController kc;//°´¼ü¿ØÖÆÆ÷

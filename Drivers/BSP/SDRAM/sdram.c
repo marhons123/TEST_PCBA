@@ -10,9 +10,9 @@
 //refresh:自刷新次数
 //regval:模式寄存器的定义
 //返回值:0,正常;1,失败.
-u8 SDRAM_Send_Cmd(u8 bankx,u8 cmd,u8 refresh,u16 regval)
+uint8_t SDRAM_Send_Cmd(uint8_t bankx,uint8_t cmd,uint8_t refresh,uint16_t regval)
 {
-    u32 target_bank=0;
+    uint32_t target_bank=0;
     FMC_SDRAM_CommandTypeDef Command;
     
     if(bankx==0) target_bank=FMC_SDRAM_CMD_TARGET_BANK1;       
@@ -32,16 +32,16 @@ u8 SDRAM_Send_Cmd(u8 bankx,u8 cmd,u8 refresh,u16 regval)
 //发送SDRAM初始化序列
 void SDRAM_Initialization_Sequence()
 {
-	u32 temp=0;
+	uint32_t temp=0;
 	//SDRAM控制器初始化完成以后还需要按照如下顺序初始化SDRAM
 	SDRAM_Send_Cmd(0,FMC_SDRAM_CMD_CLK_ENABLE,1,0); //时钟配置使能
 	delay_us(500);                                  //至少延时200us
 	SDRAM_Send_Cmd(0,FMC_SDRAM_CMD_PALL,1,0);       //对所有存储区预充电
-	SDRAM_Send_Cmd(0,FMC_SDRAM_CMD_AUTOREFRESH_MODE,8,0);//设置自刷新次数 
+	SDRAM_Send_Cmd(0,FMC_SDRAM_CMD_AUTOREFRESH_MODE,8,0);//设置自刷新次数
 	//配置模式寄存器,SDRAM的bit0~bit2为指定突发访问的长度，
 	//bit3为指定突发访问的类型，bit4~bit6为CAS值，bit7和bit8为运行模式
 	//bit9为指定的写突发模式，bit10和bit11位保留位
-	temp=(u32)SDRAM_MODEREG_BURST_LENGTH_1          |	//设置突发长度:1(可以是1/2/4/8)
+	temp=(uint32_t)SDRAM_MODEREG_BURST_LENGTH_1          |	//设置突发长度:1(可以是1/2/4/8)
 						SDRAM_MODEREG_BURST_TYPE_SEQUENTIAL   |	//设置突发类型:连续(可以是连续/交错)
 						SDRAM_MODEREG_CAS_LATENCY_3           |	//设置CAS值:3(可以是2/3)
 						SDRAM_MODEREG_OPERATING_MODE_STANDARD |   //设置操作模式:0,标准模式

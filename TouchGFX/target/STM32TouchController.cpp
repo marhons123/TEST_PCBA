@@ -23,7 +23,7 @@
 /* USER CODE BEGIN STM32TouchController */
 
 #include <STM32TouchController.hpp>
-#include "ft5206.h"
+#include "atk_rgblcd_touch.h"
 
 void STM32TouchController::init()
 {
@@ -31,7 +31,8 @@ void STM32TouchController::init()
      * Initialize touch controller and driver
      *
      */
-	   FT5206_Init();//触摸初始化
+
+	atk_rgblcd_touch_init(ATK_RGBLCD_TOUCH_TYPE_GTXX);
 }
 
 bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
@@ -46,19 +47,22 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
      * By default sampleTouch is called every tick, this can be adjusted by HAL::setTouchSampleRate(int8_t);
      *
      */
-	u8 buf[4];
-	if (FT_INT == 0) //有手指按下时,会一直输出低电平
-			{
-		FT5206_RD_Reg(FT_REG_NUM_FINGER, buf, 1); //读取触摸点的状态
-		if (buf[0] & 0x0f) //是真的有手指按下
-				{
-			FT5206_RD_Reg(FT_TP1_REG, buf, 4); //读取第1点的坐标值
-			y = ((u16) (buf[0] & 0X0F) << 8) + buf[1];
-			x = ((u16) (buf[2] & 0X0F) << 8) + buf[3];
-			return true;
-		}
-	}
-	return false;
+	  	atk_rgblcd_touch_point_t touch_points[5];
+
+	    // 执行触摸扫描，并将触摸点数组和触摸点数量传递给 atk_rgblcd_touch_scan 函数
+	    uint8_t num_points = atk_rgblcd_touch_scan(touch_points, 1);
+
+	    // 检查是否成功扫描到触摸点
+	    if (num_points > 0) {
+	        // 从触摸点数组中获取坐标值
+	        x = touch_points[0].x;
+	        y = touch_points[0].y;
+	        return true;
+	    }
+	    else {
+	    	return false;
+	    }
+
 }
 
 /* USER CODE END STM32TouchController */

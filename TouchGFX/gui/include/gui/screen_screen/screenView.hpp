@@ -17,8 +17,23 @@ public:
 	virtual void changeButtonClickHandler();
 	virtual void handleTickEvent();
 	void moveIamge();
+	int tickCounter;
+	void dynamicGraph();
+	int tickCounter1;
+	int analogHours;
+	int analogMinutes;
+	int analogSeconds;
+	void analogClock();
+	int tickCounter2;
+	int digitalHours;
+	int digitalMinutes;
+	int digitalSeconds;
+	void digitalClock();
+
+
 
 protected:
+
 
 };
 

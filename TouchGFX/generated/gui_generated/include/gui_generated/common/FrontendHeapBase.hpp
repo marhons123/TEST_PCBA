@@ -12,10 +12,24 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/screen_screen/screenView.hpp>
-#include <gui/screen_screen/screenPresenter.hpp>
+#include <gui/screen0_screen/Screen0View.hpp>
+#include <gui/screen0_screen/Screen0Presenter.hpp>
+#include <gui/fasttest_screen/FastTestView.hpp>
+#include <gui/fasttest_screen/FastTestPresenter.hpp>
+#include <gui/slowtest_screen/SlowTestView.hpp>
+#include <gui/slowtest_screen/SlowTestPresenter.hpp>
+#include <gui/setting_screen/SettingView.hpp>
+#include <gui/setting_screen/SettingPresenter.hpp>
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
+#include <gui/screen2_screen/Screen2View.hpp>
+#include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/screen3_screen/Screen3View.hpp>
+#include <gui/screen3_screen/Screen3Presenter.hpp>
+#include <gui/screen4_screen/Screen4View.hpp>
+#include <gui/screen4_screen/Screen4Presenter.hpp>
+#include <gui/screen5_screen/Screen5View.hpp>
+#include <gui/screen5_screen/Screen5Presenter.hpp>
 
 
 /**
@@ -38,9 +52,16 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< screenView,
+    typedef touchgfx::meta::TypeList< Screen0View,
+            touchgfx::meta::TypeList< FastTestView,
+            touchgfx::meta::TypeList< SlowTestView,
+            touchgfx::meta::TypeList< SettingView,
             touchgfx::meta::TypeList< Screen1View,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< Screen2View,
+            touchgfx::meta::TypeList< Screen3View,
+            touchgfx::meta::TypeList< Screen4View,
+            touchgfx::meta::TypeList< Screen5View,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -52,9 +73,16 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< screenPresenter,
+    typedef touchgfx::meta::TypeList< Screen0Presenter,
+            touchgfx::meta::TypeList< FastTestPresenter,
+            touchgfx::meta::TypeList< SlowTestPresenter,
+            touchgfx::meta::TypeList< SettingPresenter,
             touchgfx::meta::TypeList< Screen1Presenter,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< Screen2Presenter,
+            touchgfx::meta::TypeList< Screen3Presenter,
+            touchgfx::meta::TypeList< Screen4Presenter,
+            touchgfx::meta::TypeList< Screen5Presenter,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -77,7 +105,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoscreenScreenNoTransition();
+        app.gotoScreen0ScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)
