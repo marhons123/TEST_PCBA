@@ -1,0 +1,3298 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Boot",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 1024,
+            "Height": 600,
+            "LockPosition": true,
+            "Color": {
+              "Red": 52,
+              "Green": 94,
+              "Blue": 116
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 165,
+            "Y": 180,
+            "Width": 694,
+            "Height": 153,
+            "TextId": "__SingleUse_G9LL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 390,
+            "Y": 449,
+            "Width": 244,
+            "Height": 31,
+            "TextId": "__SingleUse_NDWM",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 100,
+            "Height": 50,
+            "RelativeFilename": "te.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Test"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Test",
+        "CanvasBufferSize": 15360,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bgBox",
+            "Width": 1024,
+            "Height": 600,
+            "LockPosition": true,
+            "Color": {
+              "Red": 52,
+              "Green": 94,
+              "Blue": 116
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "teLogo",
+            "Width": 100,
+            "Height": 50,
+            "RelativeFilename": "te.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "test",
+            "X": 405,
+            "Y": 2,
+            "Width": 190,
+            "Height": 47,
+            "TextId": "__SingleUse_LV1O",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "settings",
+            "X": 885,
+            "Y": 520,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_3EU8",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "testing",
+            "X": 885,
+            "Y": 440,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_YSNM",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "Y": 100,
+            "Width": 1024,
+            "Height": 15,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 12.0,
+            "StartY": 5.0,
+            "EndX": 1000.0,
+            "EndY": 5.0,
+            "LineWidth": 1.0,
+            "LineEndingStyle": "Butt"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage3Area",
+            "X": 107,
+            "Y": 356,
+            "Width": 179,
+            "Height": 47,
+            "TextId": "__SingleUse_V163",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage2Area",
+            "X": 107,
+            "Y": 459,
+            "Width": 188,
+            "Height": 47,
+            "Visible": false,
+            "TextId": "__SingleUse_NVA5",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage1Area",
+            "X": 107,
+            "Y": 306,
+            "Width": 179,
+            "Height": 47,
+            "TextId": "__SingleUse_QFZM",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingCoilVoltageArea",
+            "X": 107,
+            "Y": 206,
+            "Width": 249,
+            "Height": 47,
+            "TextId": "__SingleUse_VTGQ",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionTimeArea",
+            "X": 107,
+            "Y": 256,
+            "Width": 259,
+            "Height": 47,
+            "TextId": "__SingleUse_J680",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingCoilVoltageArea",
+            "X": 107,
+            "Y": 159,
+            "Width": 249,
+            "Height": 47,
+            "TextId": "__SingleUse_YV89",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "totalDefective",
+            "X": 700,
+            "Y": 536,
+            "Width": 180,
+            "Height": 34,
+            "TextId": "__SingleUse_NGK2",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_6FRO",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "totalQualified",
+            "X": 400,
+            "Y": 536,
+            "Width": 200,
+            "Height": 34,
+            "TextId": "__SingleUse_TJRJ",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 2
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_868F",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "totalProduction",
+            "X": 100,
+            "Y": 536,
+            "Width": 200,
+            "Height": 34,
+            "TextId": "__SingleUse_CXW4",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_PXMZ",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "parameterNumber",
+            "X": 107,
+            "Y": 66,
+            "Width": 380,
+            "Height": 34,
+            "TextId": "__SingleUse_PZ00",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_2QNK",
+              "UseBuffer": true,
+              "BufferSize": 3
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "productModel",
+            "X": 700,
+            "Y": 66,
+            "Width": 380,
+            "Height": 34,
+            "TextId": "__SingleUse_WUM4",
+            "TextRotation": "0",
+            "Wildcard1": {
+              "TextId": "__SingleUse_KYVY",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage3",
+            "X": 400,
+            "Y": 356,
+            "Width": 258,
+            "Height": 47,
+            "TextId": "__SingleUse_BWUE",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_308F",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage2",
+            "X": 400,
+            "Y": 459,
+            "Width": 258,
+            "Height": 47,
+            "Visible": false,
+            "TextId": "__SingleUse_ZZ6I",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_51KW",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage1",
+            "X": 400,
+            "Y": 309,
+            "Width": 258,
+            "Height": 47,
+            "TextId": "__SingleUse_AIR9",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_VPJ9",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionTime",
+            "X": 400,
+            "Y": 259,
+            "Width": 258,
+            "Height": 47,
+            "Visible": false,
+            "TextId": "__SingleUse_GPGA",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_RRGD",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingCoilVoltage",
+            "X": 400,
+            "Y": 209,
+            "Width": 258,
+            "Height": 47,
+            "TextId": "__SingleUse_KNOS",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_DABS",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingCoilVoltage",
+            "X": 400,
+            "Y": 159,
+            "Width": 258,
+            "Height": 47,
+            "TextId": "__SingleUse_GHYO",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_S3XQ",
+              "UseBuffer": true,
+              "BufferSize": 8
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "OK",
+            "X": 644,
+            "Y": 223,
+            "Width": 182,
+            "Height": 141,
+            "Visible": false,
+            "TextId": "__SingleUse_8XYH",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "NG",
+            "X": 643,
+            "Y": 223,
+            "Width": 185,
+            "Height": 141,
+            "Visible": false,
+            "TextId": "__SingleUse_ZFR8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionOK",
+            "X": 400,
+            "Y": 256,
+            "Width": 61,
+            "Height": 47,
+            "Visible": false,
+            "TextId": "__SingleUse_NEQT",
+            "TextRotation": "0",
+            "Color": {
+              "Green": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionNG",
+            "X": 400,
+            "Y": 256,
+            "Width": 62,
+            "Height": 47,
+            "Visible": false,
+            "TextId": "__SingleUse_7GJB",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "settings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Setting"
+            }
+          },
+          {
+            "InteractionName": "testingClicked",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "testing"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "testingClicked"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Setting",
+        "CanvasBufferSize": 15360,
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "bgBox",
+            "Width": 1024,
+            "Height": 600,
+            "LockPosition": true,
+            "Color": {
+              "Red": 52,
+              "Green": 94,
+              "Blue": 116
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "teLogo",
+            "Width": 100,
+            "Height": 50,
+            "RelativeFilename": "te.png"
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "X": 6,
+            "Y": 100,
+            "Width": 1024,
+            "Height": 15,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "StartX": 12.0,
+            "StartY": 5.0,
+            "EndX": 1000.0,
+            "EndY": 5.0,
+            "LineWidth": 1.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Line",
+            "Name": "line2",
+            "X": 380,
+            "Y": 125,
+            "Width": 15,
+            "Height": 260,
+            "Color": {
+              "Red": 122,
+              "Green": 118,
+              "Blue": 118
+            },
+            "StartX": 5.0,
+            "StartY": 5.0,
+            "EndX": 5.0,
+            "EndY": 300.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "exit",
+            "X": 885,
+            "Y": 520,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_6TF1",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "resetCounter",
+            "X": 39,
+            "Y": 520,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_LRFP",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "nextPage",
+            "X": 32,
+            "Y": 7,
+            "Width": 36,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_icon_rounded_micro_fill_normal.png",
+            "Alpha": 0,
+            "TextId": "__SingleUse_DFEF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 670,
+            "Y": 140,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_8X6N",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 839,
+            "Y": 141,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_NLN6",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 670,
+            "Y": 218,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_GKGF",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea4",
+            "X": 839,
+            "Y": 219,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_19DR",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 670,
+            "Y": 179,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_0P2M",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea6",
+            "X": 839,
+            "Y": 180,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_P41O",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea7",
+            "X": 669,
+            "Y": 257,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_UUGV",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea8",
+            "X": 838,
+            "Y": 258,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_4T9F",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9",
+            "X": 670,
+            "Y": 409,
+            "Width": 40,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "__SingleUse_N8MG",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea10",
+            "X": 839,
+            "Y": 410,
+            "Width": 40,
+            "Height": 24,
+            "Visible": false,
+            "TextId": "__SingleUse_9O3M",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea11",
+            "X": 669,
+            "Y": 294,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_RNFA",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea12",
+            "X": 838,
+            "Y": 295,
+            "Width": 40,
+            "Height": 24,
+            "TextId": "__SingleUse_HCFU",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "parameterSettings",
+            "X": 380,
+            "Y": 6,
+            "Width": 240,
+            "Height": 53,
+            "TextId": "__SingleUse_FQA3",
+            "TextRotation": "0"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "parameterNumberArea",
+            "X": 61,
+            "Y": 66,
+            "Width": 116,
+            "Height": 31,
+            "TextId": "__SingleUse_YUJI",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "productModelArea",
+            "X": 597,
+            "Y": 66,
+            "Width": 116,
+            "Height": 31,
+            "TextId": "__SingleUse_YX6M",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "ratedVoltageArea",
+            "X": 61,
+            "Y": 143,
+            "Width": 116,
+            "Height": 31,
+            "TextId": "__SingleUse_4B6J",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "samplingTimeArea",
+            "X": 120,
+            "Y": 444,
+            "Width": 116,
+            "Height": 31,
+            "Visible": false,
+            "TextId": "__SingleUse_XTA8",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inVoltageArea1",
+            "X": 60,
+            "Y": 246,
+            "Width": 132,
+            "Height": 31,
+            "TextId": "__SingleUse_2Q2R",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inVoltageArea2",
+            "X": 119,
+            "Y": 397,
+            "Width": 140,
+            "Height": 31,
+            "Visible": false,
+            "TextId": "__SingleUse_HEL9",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inVoltageArea3",
+            "X": 60,
+            "Y": 289,
+            "Width": 132,
+            "Height": 31,
+            "TextId": "__SingleUse_9BZ5",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingCoilVoltageArea",
+            "X": 420,
+            "Y": 138,
+            "Width": 158,
+            "Height": 31,
+            "TextId": "__SingleUse_31AR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionTimeArea",
+            "X": 420,
+            "Y": 215,
+            "Width": 241,
+            "Height": 31,
+            "TextId": "__SingleUse_LK9K",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdCoilVoltageArea",
+            "X": 420,
+            "Y": 177,
+            "Width": 158,
+            "Height": 31,
+            "TextId": "__SingleUse_8TK3",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage1Area",
+            "X": 419,
+            "Y": 255,
+            "Width": 124,
+            "Height": 31,
+            "TextId": "__SingleUse_G33Z",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage2Area",
+            "X": 420,
+            "Y": 407,
+            "Width": 140,
+            "Height": 31,
+            "Visible": false,
+            "TextId": "__SingleUse_I8JM",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage3Area",
+            "X": 419,
+            "Y": 292,
+            "Width": 124,
+            "Height": 31,
+            "TextId": "__SingleUse_KFDS",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage3LowerLimit",
+            "X": 888,
+            "Y": 292,
+            "Width": 135,
+            "Height": 34,
+            "TextId": "__SingleUse_9NRL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_1993",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage3UpperLimit",
+            "X": 719,
+            "Y": 291,
+            "Width": 119,
+            "Height": 35,
+            "TextId": "__SingleUse_X0EV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_64RJ",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage2LowerLimit",
+            "X": 889,
+            "Y": 407,
+            "Width": 135,
+            "Height": 34,
+            "Visible": false,
+            "TextId": "__SingleUse_AV3M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_UH8D",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage2UpperLimit",
+            "X": 720,
+            "Y": 406,
+            "Width": 119,
+            "Height": 35,
+            "Visible": false,
+            "TextId": "__SingleUse_EDUK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_7G6D",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage1LowerLimit",
+            "X": 888,
+            "Y": 255,
+            "Width": 135,
+            "Height": 34,
+            "TextId": "__SingleUse_CGS0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3DAV",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingVoltage1UpperLimit",
+            "X": 719,
+            "Y": 253,
+            "Width": 119,
+            "Height": 36,
+            "TextId": "__SingleUse_R3GK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_RDMR",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingCoilVoltageLowerLimit",
+            "X": 885,
+            "Y": 175,
+            "Width": 139,
+            "Height": 34,
+            "TextId": "__SingleUse_LWG8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_6KR1",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "holdingCoilVoltageUpperLimit",
+            "X": 720,
+            "Y": 174,
+            "Width": 119,
+            "Height": 33,
+            "TextId": "__SingleUse_EGLV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_AMVF",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionTimeLowerLimit",
+            "X": 887,
+            "Y": 216,
+            "Width": 136,
+            "Height": 34,
+            "TextId": "__SingleUse_VZJ2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_089Y",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingTransitionTimeUpperLimit",
+            "X": 720,
+            "Y": 215,
+            "Width": 119,
+            "Height": 33,
+            "TextId": "__SingleUse_P9IX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_Z1US",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingCoilVoltageLowerLimit",
+            "X": 889,
+            "Y": 138,
+            "Width": 134,
+            "Height": 34,
+            "TextId": "__SingleUse_RL81",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_9YJI",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "startingCoilVoltageUpperLimit",
+            "X": 720,
+            "Y": 137,
+            "Width": 119,
+            "Height": 30,
+            "TextId": "__SingleUse_7ND6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_KVDU",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inputVoltage3",
+            "X": 200,
+            "Y": 289,
+            "Width": 180,
+            "Height": 34,
+            "TextId": "__SingleUse_5B6O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_WNF0",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inputVoltage2",
+            "X": 259,
+            "Y": 396,
+            "Width": 180,
+            "Height": 34,
+            "Visible": false,
+            "TextId": "__SingleUse_99Z9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_820O",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "inputVoltage1",
+            "X": 200,
+            "Y": 246,
+            "Width": 180,
+            "Height": 34,
+            "TextId": "__SingleUse_QU4T",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_G3V3",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "samplingTime",
+            "X": 236,
+            "Y": 441,
+            "Width": 180,
+            "Height": 34,
+            "Visible": false,
+            "TextId": "__SingleUse_E59D",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_0YLQ",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "ratedVoltage",
+            "X": 200,
+            "Y": 143,
+            "Width": 180,
+            "Height": 34,
+            "TextId": "__SingleUse_K3YQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_AO2Y",
+              "UseBuffer": true,
+              "BufferSize": 8
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "productModel",
+            "X": 720,
+            "Y": 66,
+            "Width": 260,
+            "Height": 34,
+            "TextId": "__SingleUse_4W4Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_DEYG",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "parameterNumber",
+            "X": 200,
+            "Y": 66,
+            "Width": 180,
+            "Height": 34,
+            "TextId": "__SingleUse_9XW8",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_0FOD",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Clickable": true
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage3LowerLimitFlex",
+            "X": 837,
+            "Y": 291,
+            "Width": 178,
+            "Height": 32,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 178,
+                "Height": 32,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage3UpperLimitFlex",
+            "X": 656,
+            "Y": 291,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage2LowerLimitFlex",
+            "X": 837,
+            "Y": 407,
+            "Width": 180,
+            "Height": 30,
+            "Visible": false,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage2UpperLimitFlex",
+            "X": 670,
+            "Y": 405,
+            "Width": 169,
+            "Height": 29,
+            "Visible": false,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 169,
+                "Height": 29,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage1LowerLimitFlex",
+            "X": 836,
+            "Y": 255,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingVoltage1UpperLimitFlex",
+            "X": 664,
+            "Y": 253,
+            "Width": 174,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 174,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingCoilVoltageLowerLimitFlex",
+            "X": 839,
+            "Y": 177,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "holdingCoilVoltageUpperLimitFlex",
+            "X": 659,
+            "Y": 175,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "startingTransitionTimeLowerLimitFlex",
+            "X": 839,
+            "Y": 218,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "startingTransitionTimeUpperLimitFlex",
+            "X": 666,
+            "Y": 215,
+            "Width": 173,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 173,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "startingCoilVoltageLowerLimitFlex",
+            "X": 839,
+            "Y": 140,
+            "Width": 180,
+            "Height": 30,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 180,
+                "Height": 30,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "startingCoilVoltageUpperLimitFlex",
+            "X": 666,
+            "Y": 139,
+            "Width": 173,
+            "Height": 31,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 173,
+                "Height": 31,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "inputVoltage3Flex",
+            "X": 61,
+            "Y": 289,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "inputVoltage2Flex",
+            "X": 119,
+            "Y": 396,
+            "Width": 300,
+            "Height": 34,
+            "Visible": false,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "inputVoltage1Flex",
+            "X": 60,
+            "Y": 246,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "samplingTimeFlex",
+            "X": 119,
+            "Y": 441,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "ratedVoltageFlex",
+            "X": 60,
+            "Y": 142,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "productModelFlex",
+            "X": 597,
+            "Y": 68,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "parameterNumberFlex",
+            "X": 61,
+            "Y": 64,
+            "Width": 300,
+            "Height": 34,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 300,
+                "Height": 34,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonOK",
+            "X": 785,
+            "Y": 60,
+            "Width": 132,
+            "Height": 115,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 40,
+                "TextId": "__SingleUse_5ACE",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 115,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonUp",
+            "X": 784,
+            "Y": 166,
+            "Width": 132,
+            "Height": 142,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 50,
+                "TextId": "__SingleUse_EHOV",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonDown",
+            "X": 784,
+            "Y": 298,
+            "Width": 132,
+            "Height": 142,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 50,
+                "TextId": "__SingleUse_K3Q9",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonExit",
+            "X": 785,
+            "Y": 425,
+            "Width": 132,
+            "Height": 115,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 40,
+                "TextId": "__SingleUse_JQE6",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 115,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "exit",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "exit"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Test"
+            }
+          },
+          {
+            "InteractionName": "nextPage",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextPage"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Serify"
+            }
+          },
+          {
+            "InteractionName": "okClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonOK"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "okClicked"
+            }
+          },
+          {
+            "InteractionName": "exitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonExit"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "exitClicked"
+            }
+          },
+          {
+            "InteractionName": "productModelClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "productModelFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "productModelClicked"
+            }
+          },
+          {
+            "InteractionName": "parameterNumberClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "parameterNumberFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "parameterNumberClicked"
+            }
+          },
+          {
+            "InteractionName": "ratedVoltageClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "ratedVoltageFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ratedVoltageClicked"
+            }
+          },
+          {
+            "InteractionName": "samplingTimeClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "samplingTimeFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "samplingTimeClicked"
+            }
+          },
+          {
+            "InteractionName": "inputVoltage1Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "inputVoltage1Flex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "inputVoltage1Clicked"
+            }
+          },
+          {
+            "InteractionName": "inputVoltage2Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "inputVoltage2Flex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "inputVoltage2Clicked"
+            }
+          },
+          {
+            "InteractionName": "inputVoltage3Clicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "inputVoltage3Flex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "inputVoltage3Clicked"
+            }
+          },
+          {
+            "InteractionName": "startingCoilVoltageUpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "startingCoilVoltageUpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startingCoilVoltageUpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "startingCoilVoltageLowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "startingCoilVoltageLowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startingCoilVoltageLowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "startingTransitionTimeUpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "startingTransitionTimeUpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startingTransitionTimeUpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "startingTransitionTimeLowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "startingTransitionTimeLowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "startingTransitionTimeLowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingCoilVoltageUpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingCoilVoltageUpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingCoilVoltageUpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingCoilVoltageLowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingCoilVoltageLowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingCoilVoltageLowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage1UpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage1UpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage1UpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage1LowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage1LowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage1LowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage2UpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage2UpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage2UpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage2LowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage2LowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage2LowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage3UpperLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage3UpperLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage3UpperLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "holdingVoltage3LowerLimitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "holdingVoltage3LowerLimitFlex"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "holdingVoltage3LowerLimitClicked"
+            }
+          },
+          {
+            "InteractionName": "resetCounterClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "resetCounter"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "resetCounterClicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "resetCounter"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Test"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Serify",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 1024,
+            "Height": 600,
+            "LockPosition": true,
+            "Color": {
+              "Red": 52,
+              "Green": 94,
+              "Blue": 116
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 440,
+            "Y": 344,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_53G9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 240,
+              "Green": 230,
+              "Blue": 230
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_5DD0",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 440,
+            "Y": 403,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_NECO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 245,
+              "Green": 242,
+              "Blue": 235
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_7Y9N",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea5",
+            "X": 100,
+            "Y": 466,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_ENOQ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 250,
+              "Blue": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_3KJU",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea6",
+            "X": 100,
+            "Y": 525,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_B5CD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 250,
+              "Blue": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_JIKA",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea7",
+            "X": 100,
+            "Y": 342,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_SUOX",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 246,
+              "Green": 251,
+              "Blue": 251
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_IRAZ",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea8",
+            "X": 100,
+            "Y": 401,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_RMZG",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 250,
+              "Blue": 247
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_M8KD",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea9",
+            "X": 440,
+            "Y": 467,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_XP5Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 245,
+              "Blue": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_1A5F",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea10",
+            "X": 440,
+            "Y": 527,
+            "Width": 340,
+            "Height": 45,
+            "TextId": "__SingleUse_VD7Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 250,
+              "Blue": 250
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_L0VO",
+              "UseBuffer": true,
+              "BufferSize": 6
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "X": 885,
+            "Y": 440,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_BGV8",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel2",
+            "X": 885,
+            "Y": 520,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_32RI",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "testing",
+            "X": 885,
+            "Y": 354,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_inactive.png",
+            "TextId": "__SingleUse_11E6",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_rounded_inactive.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "messages1",
+            "X": 85,
+            "Y": 80,
+            "Width": 650,
+            "Height": 32,
+            "TextId": "__SingleUse_PY8M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 108,
+              "Blue": 62
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_TPJ0",
+              "UseBuffer": true,
+              "BufferSize": 50
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "messages2",
+            "X": 85,
+            "Y": 120,
+            "Width": 650,
+            "Height": 32,
+            "TextId": "__SingleUse_N5E4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 240,
+              "Green": 101,
+              "Blue": 50
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_R44A",
+              "UseBuffer": true,
+              "BufferSize": 50
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "messages3",
+            "X": 85,
+            "Y": 152,
+            "Width": 650,
+            "Height": 32,
+            "TextId": "__SingleUse_S86U",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 120,
+              "Blue": 40
+            },
+            "Wildcard1": {
+              "TextId": "__SingleUse_061O",
+              "UseBuffer": true,
+              "BufferSize": 50
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 100,
+            "Height": 50,
+            "RelativeFilename": "te.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea11",
+            "X": 405,
+            "Y": 2,
+            "Width": 190,
+            "Height": 48,
+            "TextId": "__SingleUse_NGXB",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ToggleButton",
+            "Name": "toggleButton",
+            "X": 468,
+            "Y": 260,
+            "Width": 138,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_togglebutton_medium_rounded_text_on_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_togglebutton_medium_rounded_text_off_normal.png"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "outputVoltage",
+            "X": 102,
+            "Y": 260,
+            "Width": 273,
+            "Height": 48,
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 273,
+                "Height": 48,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ]
+          },
+          {
+            "Type": "TextArea",
+            "Name": "outputVoltageArea",
+            "X": 100,
+            "Y": 260,
+            "Width": 234,
+            "Height": 48,
+            "TextId": "__SingleUse_TBVH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 253,
+              "Green": 125
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_D2C3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonExit",
+            "X": 785,
+            "Y": 425,
+            "Width": 132,
+            "Height": 115,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 40,
+                "TextId": "__SingleUse_W09Y",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 115,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonOK",
+            "X": 785,
+            "Y": 60,
+            "Width": 132,
+            "Height": 115,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 40,
+                "TextId": "__SingleUse_IZB1",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 115,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonUp",
+            "X": 784,
+            "Y": 166,
+            "Width": 132,
+            "Height": 142,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 50,
+                "TextId": "__SingleUse_0E1T",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "flexButtonDown",
+            "X": 784,
+            "Y": 298,
+            "Width": 132,
+            "Height": 142,
+            "Visible": false,
+            "LockPosition": true,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "Y": 50,
+                "TextId": "__SingleUse_RK96",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "Width": 132,
+                "Height": 142,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 10,
+                "ColorReleased": {
+                  "Red": 234,
+                  "Green": 234,
+                  "Blue": 234
+                },
+                "ColorPressed": {
+                  "Red": 130,
+                  "Green": 132,
+                  "Blue": 134
+                },
+                "ColorBorderReleased": {
+                  "Red": 207,
+                  "Green": 207,
+                  "Blue": 207
+                },
+                "ColorBorderPressed": {
+                  "Red": 235,
+                  "Green": 235,
+                  "Blue": 235
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Setting"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Test"
+            }
+          },
+          {
+            "InteractionName": "testingClicked",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "testing"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "testingClicked"
+            }
+          },
+          {
+            "InteractionName": "outputVoltageClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "outputVoltage"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "outputVoltageClicked"
+            }
+          },
+          {
+            "InteractionName": "toggleButtonClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "toggleButton"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggleButtonClicked"
+            }
+          },
+          {
+            "InteractionName": "okClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonOK"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "okClicked"
+            }
+          },
+          {
+            "InteractionName": "exitClicked",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonExit"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "exitClicked"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 1024,
+      "Height": 600
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Boot",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 1024,
+        "Height": 600
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../test.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.25.0"
+}

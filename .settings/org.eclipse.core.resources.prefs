@@ -1,2 +1,9 @@
 eclipse.preferences.version=1
+encoding//Core/Inc/adc.h=UTF-8
+encoding//Core/Src/adc.c=UTF-8
+encoding//Core/Src/dac.c=UTF-8
+encoding//Core/Src/freertos.c=UTF-8
+encoding//Core/Src/main.c=UTF-8
+encoding//Core/Src/stm32f4xx_it.c=UTF-8
+encoding//FATFS/Target/user_diskio.c=UTF-8
 encoding/<project>=GBK

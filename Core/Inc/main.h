@@ -57,22 +57,53 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define POWER_ON_Pin GPIO_PIN_2
+#define POWER_ON_GPIO_Port GPIOE
+#define K_ON_Pin GPIO_PIN_3
+#define K_ON_GPIO_Port GPIOE
+#define IN3_Pin GPIO_PIN_4
+#define IN3_GPIO_Port GPIOE
+#define IN4_Pin GPIO_PIN_5
+#define IN4_GPIO_Port GPIOE
+#define IN5_Pin GPIO_PIN_6
+#define IN5_GPIO_Port GPIOE
 #define KEY2_Pin GPIO_PIN_13
 #define KEY2_GPIO_Port GPIOC
 #define NORFLASH_CS_Pin GPIO_PIN_6
 #define NORFLASH_CS_GPIO_Port GPIOF
 #define KEY_UP_Pin GPIO_PIN_0
 #define KEY_UP_GPIO_Port GPIOA
-#define KEY1_Pin GPIO_PIN_2
-#define KEY1_GPIO_Port GPIOH
+#define TEST_KEY_Pin GPIO_PIN_2
+#define TEST_KEY_GPIO_Port GPIOH
+#define TEST_KEY_EXTI_IRQn EXTI2_IRQn
 #define KEY0_Pin GPIO_PIN_3
 #define KEY0_GPIO_Port GPIOH
+#define SCL_Pin GPIO_PIN_4
+#define SCL_GPIO_Port GPIOH
+#define SDA_Pin GPIO_PIN_5
+#define SDA_GPIO_Port GPIOH
 #define LED1_Pin GPIO_PIN_0
 #define LED1_GPIO_Port GPIOB
 #define LED0_Pin GPIO_PIN_1
 #define LED0_GPIO_Port GPIOB
+#define OK_Pin GPIO_PIN_6
+#define OK_GPIO_Port GPIOC
+#define NG_Pin GPIO_PIN_7
+#define NG_GPIO_Port GPIOC
+#define startingCoilVoltageNG_Pin GPIO_PIN_8
+#define startingCoilVoltageNG_GPIO_Port GPIOC
+#define startingTransitionTimeNG_Pin GPIO_PIN_9
+#define startingTransitionTimeNG_GPIO_Port GPIOC
+#define holdingCoilVoltageNG_Pin GPIO_PIN_10
+#define holdingCoilVoltageNG_GPIO_Port GPIOC
+#define holdingVoltage1NG_Pin GPIO_PIN_11
+#define holdingVoltage1NG_GPIO_Port GPIOC
 #define LCD_BL_Pin GPIO_PIN_5
 #define LCD_BL_GPIO_Port GPIOB
+#define holdingVoltage2NG_Pin GPIO_PIN_7
+#define holdingVoltage2NG_GPIO_Port GPIOB
+#define holdingVoltage3NG_Pin GPIO_PIN_8
+#define holdingVoltage3NG_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

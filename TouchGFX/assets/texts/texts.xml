@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.24.0">
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.26.0">
   <Languages>
     <Language Id="GB" />
   </Languages>
@@ -28,155 +28,179 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_IZB1" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">确定</Translation>
+      </Text>
+      <Text Id="__SingleUse_0E1T" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">上项</Translation>
+      </Text>
+      <Text Id="__SingleUse_RK96" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">下项</Translation>
+      </Text>
+      <Text Id="__SingleUse_W09Y" Alignment="Center" TypographyId="Typography_00">
+        <Translation Language="GB">退出</Translation>
+      </Text>
+      <Text Id="__SingleUse_D2C3" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_TBVH" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">输出电压:&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_NGXB" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">校 验 界 面</Translation>
+      </Text>
+      <Text Id="__SingleUse_7GJB" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">NG</Translation>
+      </Text>
+      <Text Id="__SingleUse_NEQT" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_LRFP" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">计数清零</Translation>
+      </Text>
+      <Text Id="__SingleUse_11E6" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">测 试</Translation>
+      </Text>
+      <Text Id="__SingleUse_ZFR8" Alignment="Left" TypographyId="OK_NG">
+        <Translation Language="GB">NG</Translation>
+      </Text>
+      <Text Id="__SingleUse_6KR1" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">11.2</Translation>
+      </Text>
+      <Text Id="__SingleUse_LWG8" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_AMVF" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">12</Translation>
+      </Text>
+      <Text Id="__SingleUse_EGLV" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_P41O" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">下限</Translation>
+      </Text>
+      <Text Id="__SingleUse_0P2M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">上限</Translation>
+      </Text>
+      <Text Id="__SingleUse_31AR" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">启动线圈电压:</Translation>
+      </Text>
+      <Text Id="__SingleUse_LV1O" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">测 试 界 面</Translation>
+      </Text>
+      <Text Id="__SingleUse_WNF0" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">4</Translation>
+      </Text>
+      <Text Id="__SingleUse_5B6O" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_0YLQ" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">120</Translation>
+      </Text>
+      <Text Id="__SingleUse_E59D" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;ms</Translation>
+      </Text>
+      <Text Id="__SingleUse_G3V3" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">6</Translation>
+      </Text>
+      <Text Id="__SingleUse_QU4T" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_820O" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">5</Translation>
+      </Text>
+      <Text Id="__SingleUse_99Z9" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_XTA8" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">采样时间: </Translation>
+      </Text>
+      <Text Id="__SingleUse_9BZ5" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">输入电压2: </Translation>
+      </Text>
+      <Text Id="__SingleUse_HEL9" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">输入电压 2: </Translation>
+      </Text>
+      <Text Id="__SingleUse_2Q2R" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">输入电压1: </Translation>
+      </Text>
+      <Text Id="__SingleUse_8XYH" Alignment="Left" TypographyId="OK_NG">
+        <Translation Language="GB">OK</Translation>
+      </Text>
+      <Text Id="__SingleUse_308F" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0.03</Translation>
+      </Text>
+      <Text Id="__SingleUse_51KW" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_VPJ9" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">5.55</Translation>
+      </Text>
+      <Text Id="__SingleUse_DABS" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">11.5</Translation>
+      </Text>
+      <Text Id="__SingleUse_1993" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">0</Translation>
+      </Text>
+      <Text Id="__SingleUse_9NRL" Alignment="Left" TypographyId="Main">
+        <Translation Language="GB">&lt;value&gt;V</Translation>
+      </Text>
+      <Text Id="__SingleUse_HCFU" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">下限</Translation>
+      </Text>
+      <Text Id="__SingleUse_RNFA" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">上限</Translation>
+      </Text>
       <Text Id="__SingleUse_061O" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">New Text</Translation>
+        <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_R44A" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">abcd</Translation>
+        <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_TPJ0" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1234</Translation>
+        <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_S86U" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">*&lt;value&gt;</Translation>
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_N5E4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">*&lt;value&gt;</Translation>
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_PY8M" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">*&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_KI4E" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">SD Card OK</Translation>
-      </Text>
-      <Text Id="__SingleUse_BGQW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">Messages:&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_P3AE" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1000</Translation>
-      </Text>
-      <Text Id="__SingleUse_EY4B" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;mA</Translation>
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="OKok" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB">New Text</Translation>
       </Text>
-      <Text Id="__SingleUse_RKZL" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">&lt;&gt;</Translation>
-      </Text>
       <Text Id="__SingleUse_0FOD" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">00</Translation>
+        <Translation Language="GB">01</Translation>
       </Text>
-      <Text Id="__SingleUse_EHOV" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_EHOV" Alignment="Center" TypographyId="Typography_00">
         <Translation Language="GB">上项</Translation>
       </Text>
-      <Text Id="__SingleUse_K3Q9" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_K3Q9" Alignment="Center" TypographyId="Typography_00">
         <Translation Language="GB">下项</Translation>
       </Text>
-      <Text Id="__SingleUse_JQE6" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_JQE6" Alignment="Center" TypographyId="Typography_00">
         <Translation Language="GB">退出</Translation>
       </Text>
-      <Text Id="__SingleUse_5ACE" Alignment="Center" TypographyId="Default">
+      <Text Id="__SingleUse_5ACE" Alignment="Center" TypographyId="Typography_00">
         <Translation Language="GB">确定</Translation>
       </Text>
-      <Text Id="__SingleUse_32BV" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">测 试</Translation>
-      </Text>
-      <Text Id="__SingleUse_UDPX" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">返 回</Translation>
-      </Text>
-      <Text Id="__SingleUse_LML6" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">测 试</Translation>
-      </Text>
-      <Text Id="__SingleUse_N504" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">返 回</Translation>
-      </Text>
-      <Text Id="__SingleUse_6X5D" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">测 试</Translation>
-      </Text>
-      <Text Id="__SingleUse_3VDN" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">返 回</Translation>
-      </Text>
-      <Text Id="__SingleUse_C20I" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">测 试</Translation>
-      </Text>
-      <Text Id="__SingleUse_AEYL" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">返 回</Translation>
-      </Text>
-      <Text Id="__SingleUse_YW9J" Alignment="Center" TypographyId="Large">
-        <Translation Language="GB">时间校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_DMEN" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">电压校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_QYXC" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">接触电阻校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_V5EM" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">线圈电阻校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_6JZ1" Alignment="Center" TypographyId="Main">
-        <Translation Language="GB">时间校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_I5JD" Alignment="Center" TypographyId="Main">
-        <Translation Language="GB">电压校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_97FZ" Alignment="Center" TypographyId="Main">
-        <Translation Language="GB">接触电阻校准</Translation>
-      </Text>
-      <Text Id="__SingleUse_0QY1" Alignment="Center" TypographyId="Main">
-        <Translation Language="GB">线圈电阻校准</Translation>
-      </Text>
       <Text Id="__SingleUse_NDWM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">版本:V1.020240918</Translation>
+        <Translation Language="GB">版本:V1.020251215</Translation>
       </Text>
-      <Text Id="__SingleUse_JF01" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">MHS@TE 15999582658</Translation>
+      <Text Id="__SingleUse_G9LL" Alignment="Center" TypographyId="OK_NG">
+        <Translation Language="GB">PCBA测试仪</Translation>
       </Text>
-      <Text Id="__SingleUse_G9LL" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">继电器综合参数测试仪</Translation>
-      </Text>
-      <Text Id="__SingleUse_TJLZ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZZ6I" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_QL8Z" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_I4DR" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_L296" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_A7VK" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">下页</Translation>
+      <Text Id="__SingleUse_ZZ6I" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
       <Text Id="__SingleUse_32RI" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">退 出</Translation>
       </Text>
       <Text Id="__SingleUse_BGV8" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">上 页</Translation>
-      </Text>
-      <Text Id="__SingleUse_9BG3" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1000</Translation>
-      </Text>
-      <Text Id="__SingleUse_SN0J" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;mA</Translation>
-      </Text>
-      <Text Id="__SingleUse_ROAY" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
-      </Text>
-      <Text Id="__SingleUse_0FJ4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_P4G1" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">2C</Translation>
-      </Text>
-      <Text Id="__SingleUse_35JL" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_AO2Y" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">12</Translation>
@@ -185,7 +209,7 @@
         <Translation Language="GB">&lt;value&gt;V</Translation>
       </Text>
       <Text Id="__SingleUse_DEYG" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">RT-2P</Translation>
+        <Translation Language="GB">ECPN-12V</Translation>
       </Text>
       <Text Id="__SingleUse_4W4Q" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">&lt;value&gt;</Translation>
@@ -194,88 +218,25 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_UH8D" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
+        <Translation Language="GB">0</Translation>
       </Text>
       <Text Id="__SingleUse_7G6D" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">3</Translation>
+        <Translation Language="GB">1</Translation>
       </Text>
       <Text Id="__SingleUse_64RJ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">12</Translation>
+        <Translation Language="GB">0.2</Translation>
       </Text>
       <Text Id="__SingleUse_3DAV" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">5</Translation>
       </Text>
       <Text Id="__SingleUse_RDMR" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">9</Translation>
+        <Translation Language="GB">12</Translation>
       </Text>
       <Text Id="__SingleUse_9YJI" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
+        <Translation Language="GB">11.2</Translation>
       </Text>
       <Text Id="__SingleUse_RL81" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_TLFH" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_UB9Y" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_JXLS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_FNMF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_83O3" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_KWMD" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_F8MF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_160S" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_WJMF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_OKXW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_G4JW" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">V1.0.20240918</Translation>
-      </Text>
-      <Text Id="__SingleUse_XZHP" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">下限</Translation>
-      </Text>
-      <Text Id="__SingleUse_R4QZ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">上限</Translation>
-      </Text>
-      <Text Id="__SingleUse_9G72" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">下限</Translation>
-      </Text>
-      <Text Id="__SingleUse_Y19O" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">上限</Translation>
-      </Text>
-      <Text Id="__SingleUse_9SKP" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">下限</Translation>
-      </Text>
-      <Text Id="__SingleUse_SM2T" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">上限</Translation>
-      </Text>
-      <Text Id="__SingleUse_7PTB" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">下限</Translation>
-      </Text>
-      <Text Id="__SingleUse_MHO4" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">上限</Translation>
-      </Text>
-      <Text Id="__SingleUse_JFNL" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">下限</Translation>
-      </Text>
-      <Text Id="__SingleUse_YBLO" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">上限</Translation>
+        <Translation Language="GB">&lt;value&gt;V</Translation>
       </Text>
       <Text Id="__SingleUse_9O3M" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">下限</Translation>
@@ -302,7 +263,7 @@
         <Translation Language="GB">上限</Translation>
       </Text>
       <Text Id="__SingleUse_DFEF" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">下 页</Translation>
+        <Translation Language="GB"></Translation>
       </Text>
       <Text Id="__SingleUse_AV3M" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">&lt;value&gt;V</Translation>
@@ -320,88 +281,34 @@
         <Translation Language="GB">&lt;value&gt;V</Translation>
       </Text>
       <Text Id="__SingleUse_I8JM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_NM64" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">10</Translation>
-      </Text>
-      <Text Id="__SingleUse_N4M4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_LRJL" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">同步时间:</Translation>
-      </Text>
-      <Text Id="__SingleUse_WTKG" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">10</Translation>
-      </Text>
-      <Text Id="__SingleUse_QBRR" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_FH4Y" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_9A6Y" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">10</Translation>
-      </Text>
-      <Text Id="__SingleUse_FIIW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZADS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放时间:</Translation>
-      </Text>
-      <Text Id="__SingleUse_G3EL" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">10</Translation>
-      </Text>
-      <Text Id="__SingleUse_Y91I" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_SLDF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_2Q60" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合时间: </Translation>
-      </Text>
-      <Text Id="__SingleUse_5X48" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">10</Translation>
-      </Text>
-      <Text Id="__SingleUse_XRXV" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
+        <Translation Language="GB">保持电压  2:</Translation>
       </Text>
       <Text Id="__SingleUse_KFDS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">二次吸合:</Translation>
+        <Translation Language="GB">保持电压2:</Translation>
       </Text>
       <Text Id="__SingleUse_8TK3" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">线圈电阻:</Translation>
+        <Translation Language="GB">保持线圈电压:</Translation>
       </Text>
       <Text Id="__SingleUse_LK9K" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">接触电阻: </Translation>
+        <Translation Language="GB">启动时间检测: </Translation>
       </Text>
       <Text Id="__SingleUse_G33Z" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_72GS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点电流: </Translation>
-      </Text>
-      <Text Id="__SingleUse_TGDC" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点类型: </Translation>
+        <Translation Language="GB">保持电压1:</Translation>
       </Text>
       <Text Id="__SingleUse_4B6J" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">额定电压: </Translation>
       </Text>
       <Text Id="__SingleUse_089Y" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0.1</Translation>
+        <Translation Language="GB">80</Translation>
       </Text>
       <Text Id="__SingleUse_VZJ2" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;mΩ</Translation>
+        <Translation Language="GB">&lt;value&gt;ms</Translation>
       </Text>
       <Text Id="__SingleUse_Z1US" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">100</Translation>
+        <Translation Language="GB">200</Translation>
       </Text>
       <Text Id="__SingleUse_P9IX" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_AWOW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">温度系数: </Translation>
+        <Translation Language="GB">&lt;value&gt;ms</Translation>
       </Text>
       <Text Id="__SingleUse_YX6M" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">产品型号: </Translation>
@@ -410,28 +317,10 @@
         <Translation Language="GB">参数序号: </Translation>
       </Text>
       <Text Id="__SingleUse_KVDU" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">800</Translation>
+        <Translation Language="GB">12</Translation>
       </Text>
       <Text Id="__SingleUse_7ND6" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZDXZ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">2024</Translation>
-      </Text>
-      <Text Id="__SingleUse_53P7" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;年</Translation>
-      </Text>
-      <Text Id="__SingleUse_G25S" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_3QL9" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">18</Translation>
-      </Text>
-      <Text Id="__SingleUse_9V7A" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">08</Translation>
-      </Text>
-      <Text Id="__SingleUse_1YMM" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;月&lt;value&gt;日</Translation>
+        <Translation Language="GB">&lt;value&gt;V</Translation>
       </Text>
       <Text Id="__SingleUse_FQA3" Alignment="Left" TypographyId="Large">
         <Translation Language="GB">参数设置界面</Translation>
@@ -439,413 +328,77 @@
       <Text Id="__SingleUse_6TF1" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">退 出</Translation>
       </Text>
-      <Text Id="__SingleUse_ZLKE" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">翻 页</Translation>
+      <Text Id="__SingleUse_BWUE" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
-      <Text Id="__SingleUse_CVVC" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">翻 页</Translation>
+      <Text Id="__SingleUse_AIR9" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
-      <Text Id="__SingleUse_BWUE" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK</Translation>
+      <Text Id="__SingleUse_KNOS" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
-      <Text Id="__SingleUse_QQMJ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK</Translation>
+      <Text Id="__SingleUse_V163" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">保持电压2</Translation>
       </Text>
-      <Text Id="__SingleUse_AIR9" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK</Translation>
+      <Text Id="__SingleUse_QFZM" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">保持电压1</Translation>
       </Text>
-      <Text Id="__SingleUse_SKFM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK</Translation>
+      <Text Id="__SingleUse_VTGQ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">保持线圈电压:</Translation>
       </Text>
-      <Text Id="__SingleUse_KNOS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK</Translation>
-      </Text>
-      <Text Id="__SingleUse_V163" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">开放电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_QFZM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">二次吸合:</Translation>
-      </Text>
-      <Text Id="__SingleUse_VTGQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">不动作电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_NVA5" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">保持电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_YUVS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_E6AM" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">测 试</Translation>
-      </Text>
-      <Text Id="__SingleUse_ET9T" Alignment="Left" TypographyId="OK_NG">
-        <Translation Language="GB">OK</Translation>
-      </Text>
-      <Text Id="__SingleUse_53NP" Alignment="Left" TypographyId="OK_NG">
-        <Translation Language="GB">NG</Translation>
-      </Text>
-      <Text Id="__SingleUse_HOX6" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">99999</Translation>
-      </Text>
-      <Text Id="__SingleUse_CY9B" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NG品:&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_A8DD" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">99999</Translation>
-      </Text>
-      <Text Id="__SingleUse_3AGY" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">OK品:&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_345R" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">99999</Translation>
-      </Text>
-      <Text Id="__SingleUse_1YFN" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">总产量:&lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_GSMN" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_1NQQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_N2P7" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">同步时间:</Translation>
-      </Text>
-      <Text Id="__SingleUse_IMWT" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_A14O" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_BQJ1" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_3VAG" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_YL0F" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_O48B" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放时间:</Translation>
-      </Text>
-      <Text Id="__SingleUse_47CH" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_FK0E" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_C4GH" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_YT9Z" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合时间: </Translation>
-      </Text>
-      <Text Id="__SingleUse_IZZ4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_OJ00" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_ISSL" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_NT9U" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;V</Translation>
-      </Text>
-      <Text Id="__SingleUse_8HBZ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_R0WT" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">二次吸合:</Translation>
-      </Text>
-      <Text Id="__SingleUse_P2GS" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">线圈电阻:</Translation>
-      </Text>
-      <Text Id="__SingleUse_XM7O" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">接触电阻: </Translation>
-      </Text>
-      <Text Id="__SingleUse_UY69" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合电压:</Translation>
-      </Text>
-      <Text Id="__SingleUse_PQUM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_4RQA" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;V</Translation>
-      </Text>
-      <Text Id="__SingleUse_AL3H" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1A</Translation>
-      </Text>
-      <Text Id="__SingleUse_BAJV" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点电流: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_TUTW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">2C</Translation>
-      </Text>
-      <Text Id="__SingleUse_G3BK" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点类型: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_24JF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">12.12</Translation>
-      </Text>
-      <Text Id="__SingleUse_6BZN" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">额定电压: &lt;value&gt;V</Translation>
-      </Text>
-      <Text Id="__SingleUse_0XFA" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_DR4D" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;V</Translation>
-      </Text>
-      <Text Id="__SingleUse_LSAF" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">999</Translation>
-      </Text>
-      <Text Id="__SingleUse_JY7M" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NC2: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_ANZ0" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">999</Translation>
-      </Text>
-      <Text Id="__SingleUse_90Z2" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NO2: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_RJTL" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">999</Translation>
-      </Text>
-      <Text Id="__SingleUse_04WT" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NC1: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_K8YE" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">999</Translation>
-      </Text>
-      <Text Id="__SingleUse_A00S" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NO1: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_AIMT" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">20</Translation>
-      </Text>
-      <Text Id="__SingleUse_P0EA" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">环境温度: &lt;value&gt;℃</Translation>
-      </Text>
-      <Text Id="__SingleUse_IPO1" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">RTE24012</Translation>
-      </Text>
-      <Text Id="__SingleUse_8UGQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">产品型号: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_4QFQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">01</Translation>
-      </Text>
-      <Text Id="__SingleUse_OQB4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">参数序号: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_CPTB" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_FYQN" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">(20℃): &lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_NG37" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">0</Translation>
-      </Text>
-      <Text Id="__SingleUse_2EHX" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_ASEO" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">2024</Translation>
-      </Text>
-      <Text Id="__SingleUse_UJ6B" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;年</Translation>
-      </Text>
-      <Text Id="__SingleUse_G0L1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_03Y6" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">18</Translation>
-      </Text>
-      <Text Id="__SingleUse_FH60" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">08</Translation>
-      </Text>
-      <Text Id="__SingleUse_KUE6" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;月&lt;value&gt;日</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZERO" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">主测画面(斜波)</Translation>
-      </Text>
-      <Text Id="__SingleUse_HKM0" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">设 置</Translation>
+      <Text Id="__SingleUse_NVA5" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">保持电压2:</Translation>
       </Text>
       <Text Id="__SingleUse_YSNM" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">测 试</Translation>
       </Text>
-      <Text Id="__SingleUse_JLG1" Alignment="Left" TypographyId="OK_NG">
-        <Translation Language="GB">OK</Translation>
-      </Text>
-      <Text Id="__SingleUse_7HMY" Alignment="Left" TypographyId="OK_NG">
-        <Translation Language="GB">NG</Translation>
-      </Text>
       <Text Id="__SingleUse_6FRO" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
+        <Translation Language="GB">0</Translation>
       </Text>
       <Text Id="__SingleUse_NGK2" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">NG品:&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_868F" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1200</Translation>
+        <Translation Language="GB">1</Translation>
       </Text>
       <Text Id="__SingleUse_TJRJ" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">OK品:&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_PXMZ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1201</Translation>
+        <Translation Language="GB">1</Translation>
       </Text>
       <Text Id="__SingleUse_CXW4" Alignment="Left" TypographyId="Main">
         <Translation Language="GB">总产量:&lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_UUNA" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
+      <Text Id="__SingleUse_YV89" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">启动线圈电压:</Translation>
       </Text>
-      <Text Id="__SingleUse_XYJ4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
+      <Text Id="__SingleUse_J680" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">启动线圈切换: </Translation>
       </Text>
-      <Text Id="__SingleUse_WYTK" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">同步时间:</Translation>
+      <Text Id="__SingleUse_RRGD" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">0</Translation>
       </Text>
-      <Text Id="__SingleUse_PAI7" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
-      </Text>
-      <Text Id="__SingleUse_M5FW" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_LKHO" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_GKSX" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">4</Translation>
-      </Text>
-      <Text Id="__SingleUse_DRAU" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_3FCE" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">释放时间:</Translation>
-      </Text>
-      <Text Id="__SingleUse_AT2Z" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1</Translation>
-      </Text>
-      <Text Id="__SingleUse_UGLK" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_AC72" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合回跳:</Translation>
-      </Text>
-      <Text Id="__SingleUse_LQHT" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">吸合时间: </Translation>
-      </Text>
-      <Text Id="__SingleUse_FE1Z" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">5</Translation>
-      </Text>
-      <Text Id="__SingleUse_NNKG" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;ms</Translation>
-      </Text>
-      <Text Id="__SingleUse_YV89" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">线圈电阻:</Translation>
-      </Text>
-      <Text Id="__SingleUse_J680" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">接触电阻: </Translation>
-      </Text>
-      <Text Id="__SingleUse_ULRQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">1000</Translation>
-      </Text>
-      <Text Id="__SingleUse_9IP0" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点电流: &lt;value&gt;mA</Translation>
-      </Text>
-      <Text Id="__SingleUse_60XH" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">2C</Translation>
-      </Text>
-      <Text Id="__SingleUse_U7QP" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">触点类型: &lt;value&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_IWER" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">12</Translation>
-      </Text>
-      <Text Id="__SingleUse_CGBI" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">额定电压: &lt;value&gt;V</Translation>
-      </Text>
-      <Text Id="__SingleUse_KM3F" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">9</Translation>
-      </Text>
-      <Text Id="__SingleUse_RKTM" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NC2: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_Q5F2" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">7</Translation>
-      </Text>
-      <Text Id="__SingleUse_TBUQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NO2: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_3EOV" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">4</Translation>
-      </Text>
-      <Text Id="__SingleUse_AEY2" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NC1: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_RRGD" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">6</Translation>
-      </Text>
-      <Text Id="__SingleUse_GPGA" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">NO1: &lt;value&gt;mΩ</Translation>
-      </Text>
-      <Text Id="__SingleUse_MXHQ" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">20</Translation>
-      </Text>
-      <Text Id="__SingleUse_X184" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">环境温度: &lt;value&gt;℃</Translation>
+      <Text Id="__SingleUse_GPGA" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; ms</Translation>
       </Text>
       <Text Id="__SingleUse_KYVY" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">RTE24012</Translation>
+        <Translation Language="GB">ECPN-12V</Translation>
       </Text>
       <Text Id="__SingleUse_WUM4" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">产品型号: &lt;value&gt;</Translation>
+        <Translation Language="GB">产品型号:  &lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_2QNK" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">01</Translation>
+        <Translation Language="GB">1</Translation>
       </Text>
       <Text Id="__SingleUse_PZ00" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">参数序号: &lt;value&gt;</Translation>
+        <Translation Language="GB">参数序号:  &lt;value&gt;</Translation>
       </Text>
-      <Text Id="__SingleUse_6F0H" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">720</Translation>
+      <Text Id="__SingleUse_S3XQ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">11.5</Translation>
       </Text>
-      <Text Id="__SingleUse_GXSG" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">(20℃): &lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_S3XQ" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">720</Translation>
-      </Text>
-      <Text Id="__SingleUse_GHYO" Alignment="Left" TypographyId="Main">
-        <Translation Language="GB">&lt;value&gt;Ω</Translation>
-      </Text>
-      <Text Id="__SingleUse_X8EG" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">2024</Translation>
-      </Text>
-      <Text Id="__SingleUse_SK84" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;年</Translation>
-      </Text>
-      <Text Id="__SingleUse_POTT" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;&gt;</Translation>
-      </Text>
-      <Text Id="__SingleUse_KED4" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">18</Translation>
-      </Text>
-      <Text Id="__SingleUse_ZPW1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">08</Translation>
-      </Text>
-      <Text Id="__SingleUse_EBMF" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">&lt;value&gt;月&lt;value&gt;日</Translation>
-      </Text>
-      <Text Id="__SingleUse_UYVK" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">主测画面(方波)</Translation>
+      <Text Id="__SingleUse_GHYO" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt; V</Translation>
       </Text>
       <Text Id="__SingleUse_3EU8" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">设 置</Translation>
@@ -913,15 +466,15 @@
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="SIMYOU.TTF" Size="20" Bpp="4" IsVector="no" Direction="RTL" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
-    <Typography Id="Large" Font="STKAITI.TTF" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Default" Font="SIMYOU.TTF" Size="20" Bpp="4" IsVector="no" Direction="RTL" FallbackCharacter="?" />
+    <Typography Id="Large" Font="STKAITI.TTF" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="-. " WildcardCharacterRanges="0-9" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Typography_00" Font="STSONG.TTF" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="-. " WildcardCharacterRanges="0-9" />
     <Typography Id="Main" Font="STZHONGS.TTF" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
     <Typography Id="OK_NG" Font="STZHONGS.TTF" Size="120" Bpp="4" IsVector="no" Direction="RTL" FallbackCharacter="?" />
     <Typography Id="Title" Font="courbd.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Display" Font="verdanab.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
-    <Typography Id="Mode" Font="verdanab.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Keyboard" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
+    <Typography Id="Display" Font="verdanab.ttf" Size="30" Bpp="2" IsVector="no" Direction="RTL" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
+    <Typography Id="Mode" Font="verdanab.ttf" Size="25" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Keyboard" Font="verdana.ttf" Size="20" Bpp="2" IsVector="no" Direction="RTL" FallbackCharacter="?" WildcardCharacters="!”&quot;#*%&amp;()'$+-@_, .:;?/~±×÷•º`´{}©£€^®¥_=[]¡¢|\¿&gt;&lt;" WildcardCharacterRanges="a-z,A-Z,0-9" />
   </Typographies>
 </TextDatabase>

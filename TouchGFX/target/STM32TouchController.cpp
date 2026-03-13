@@ -49,12 +49,12 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
      */
 	  	atk_rgblcd_touch_point_t touch_points[5];
 
-	    // Ö´ÐÐ´¥ÃþÉ¨Ãè£¬²¢½«´¥ÃþµãÊý×éºÍ´¥ÃþµãÊýÁ¿´«µÝ¸ø atk_rgblcd_touch_scan º¯Êý
+	    // Ö´ï¿½Ð´ï¿½ï¿½ï¿½É¨ï¿½è£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½ atk_rgblcd_touch_scan ï¿½ï¿½ï¿½ï¿½
 	    uint8_t num_points = atk_rgblcd_touch_scan(touch_points, 1);
 
-	    // ¼ì²éÊÇ·ñ³É¹¦É¨Ãèµ½´¥Ãþµã
+	    // ï¿½ï¿½ï¿½ï¿½Ç·ï¿½É¹ï¿½É¨ï¿½èµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	    if (num_points > 0) {
-	        // ´Ó´¥ÃþµãÊý×éÖÐ»ñÈ¡×ø±êÖµ
+	        // ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
 	        x = touch_points[0].x;
 	        y = touch_points[0].y;
 	        return true;

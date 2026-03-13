@@ -36,14 +36,13 @@ extern ADC_HandleTypeDef hadc1;
 
 /* USER CODE BEGIN Private defines */
 
-#define ADC_BUFFER_SIZE 1//ADC»º³åÇøµÄ´óĞ¡
-
-
-extern uint32_t adc_buffer[ADC_BUFFER_SIZE * 3];//´æ´¢ADC²ÉÑùÊı¾İ
-extern float voltageIn5;         // IN5Í¨µÀµçÑ¹
-extern float vrefintVoltage;     // ÄÚ²¿²Î¿¼µçÑ¹
-extern float temperature;        // ÄÚ²¿ÎÂ¶È
-extern uint16_t value;			 //ADC²ÉÑùÖµ
+#define ADC_BUFFER_SIZE 300//å§£å¿é‡œé–«æ°¶äº¾é–²å›¨ç‰±xi
+extern uint32_t adc_buffer[ADC_BUFFER_SIZE * 3];// ç€›æ¨ºåADCé–²å›¨ç‰±éç‰ˆåµ
+extern float voltageIn5;         //IN5é–«æ°¶äº¾é¢é›å¸‡
+extern float voltageIn6;         //IN6é–«æ°¶äº¾é¢é›å¸‡
+extern float temperature;        // éå‘´å„´å¨“â•å®³
+extern uint16_t value1;			 //ADCé–²å›¨ç‰±éŠï¿½
+extern uint16_t value2;			 //ADCé–²å›¨ç‰±éŠè´¾ï¿½
 
 /* USER CODE END Private defines */
 
@@ -51,6 +50,7 @@ void MX_ADC1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 void ProcessADCData(float averageValueIn5, float averageValueVrefint, float averageValueTemp);
+void HandleADCData(void);
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc);
 void RemoveMinMaxValues(uint16_t *array, uint32_t size);
 float ComputeAverage(uint16_t *array, uint32_t size);

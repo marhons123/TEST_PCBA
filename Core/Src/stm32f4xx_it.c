@@ -22,12 +22,13 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "cmsis_os.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
-
+extern osSemaphoreId testStartSemaphoreHandle; // 锟斤拷锟皆匡拷始锟脚猴拷锟斤拷
+extern osSemaphoreId clearDisplaySemaphoreHandle;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -61,10 +62,6 @@ extern ADC_HandleTypeDef hadc1;
 extern DAC_HandleTypeDef hdac;
 extern DMA2D_HandleTypeDef hdma2d;
 extern LTDC_HandleTypeDef hltdc;
-extern DMA_HandleTypeDef hdma_sdio_rx;
-extern DMA_HandleTypeDef hdma_sdio_tx;
-extern SD_HandleTypeDef hsd;
-extern TIM_HandleTypeDef htim3;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_tx;
 extern UART_HandleTypeDef huart1;
@@ -173,6 +170,20 @@ void DebugMon_Handler(void)
 /******************************************************************************/
 
 /**
+  * @brief This function handles EXTI line2 interrupt.
+  */
+void EXTI2_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI2_IRQn 0 */
+
+  /* USER CODE END EXTI2_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(TEST_KEY_Pin);
+  /* USER CODE BEGIN EXTI2_IRQn 1 */
+
+  /* USER CODE END EXTI2_IRQn 1 */
+}
+
+/**
   * @brief This function handles ADC1, ADC2 and ADC3 global interrupts.
   */
 void ADC_IRQHandler(void)
@@ -187,20 +198,6 @@ void ADC_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles TIM3 global interrupt.
-  */
-void TIM3_IRQHandler(void)
-{
-  /* USER CODE BEGIN TIM3_IRQn 0 */
-
-  /* USER CODE END TIM3_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim3);
-  /* USER CODE BEGIN TIM3_IRQn 1 */
-
-  /* USER CODE END TIM3_IRQn 1 */
-}
-
-/**
   * @brief This function handles USART1 global interrupt.
   */
 void USART1_IRQHandler(void)
@@ -212,20 +209,6 @@ void USART1_IRQHandler(void)
   /* USER CODE BEGIN USART1_IRQn 1 */
 
   /* USER CODE END USART1_IRQn 1 */
-}
-
-/**
-  * @brief This function handles SDIO global interrupt.
-  */
-void SDIO_IRQHandler(void)
-{
-  /* USER CODE BEGIN SDIO_IRQn 0 */
-
-  /* USER CODE END SDIO_IRQn 0 */
-  HAL_SD_IRQHandler(&hsd);
-  /* USER CODE BEGIN SDIO_IRQn 1 */
-
-  /* USER CODE END SDIO_IRQn 1 */
 }
 
 /**
@@ -285,34 +268,6 @@ void DMA2_Stream2_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles DMA2 stream3 global interrupt.
-  */
-void DMA2_Stream3_IRQHandler(void)
-{
-  /* USER CODE BEGIN DMA2_Stream3_IRQn 0 */
-
-  /* USER CODE END DMA2_Stream3_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_sdio_rx);
-  /* USER CODE BEGIN DMA2_Stream3_IRQn 1 */
-
-  /* USER CODE END DMA2_Stream3_IRQn 1 */
-}
-
-/**
-  * @brief This function handles DMA2 stream6 global interrupt.
-  */
-void DMA2_Stream6_IRQHandler(void)
-{
-  /* USER CODE BEGIN DMA2_Stream6_IRQn 0 */
-
-  /* USER CODE END DMA2_Stream6_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_sdio_tx);
-  /* USER CODE BEGIN DMA2_Stream6_IRQn 1 */
-
-  /* USER CODE END DMA2_Stream6_IRQn 1 */
-}
-
-/**
   * @brief This function handles DMA2 stream7 global interrupt.
   */
 void DMA2_Stream7_IRQHandler(void)
@@ -356,4 +311,29 @@ void DMA2D_IRQHandler(void)
 
 /* USER CODE BEGIN 1 */
 
+// 锟斤拷锟斤拷锟斤拷 static 锟斤拷全锟街憋拷锟斤拷
+static uint32_t last_tick = 0;
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if (GPIO_Pin == GPIO_PIN_2)
+    {
+        static uint32_t last_tick = 0;
+        uint32_t now = HAL_GetTick();
+
+        if ((now - last_tick) >= 50)
+        {
+            last_tick = now;
+
+            if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2) == GPIO_PIN_RESET)
+            {
+                // 触发测试任务
+                osSemaphoreRelease(testStartSemaphoreHandle);
+
+                // 通知UI清空界面
+                osSemaphoreRelease(clearDisplaySemaphoreHandle);
+            }
+        }
+    }
+}
 /* USER CODE END 1 */

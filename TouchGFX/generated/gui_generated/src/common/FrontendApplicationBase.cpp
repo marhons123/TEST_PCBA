@@ -9,24 +9,14 @@
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
 #include <platform/driver/lcd/LCD16bpp.hpp>
-#include <gui/screen0_screen/Screen0View.hpp>
-#include <gui/screen0_screen/Screen0Presenter.hpp>
-#include <gui/fasttest_screen/FastTestView.hpp>
-#include <gui/fasttest_screen/FastTestPresenter.hpp>
-#include <gui/slowtest_screen/SlowTestView.hpp>
-#include <gui/slowtest_screen/SlowTestPresenter.hpp>
+#include <gui/boot_screen/BootView.hpp>
+#include <gui/boot_screen/BootPresenter.hpp>
+#include <gui/test_screen/TestView.hpp>
+#include <gui/test_screen/TestPresenter.hpp>
 #include <gui/setting_screen/SettingView.hpp>
 #include <gui/setting_screen/SettingPresenter.hpp>
-#include <gui/screen1_screen/Screen1View.hpp>
-#include <gui/screen1_screen/Screen1Presenter.hpp>
-#include <gui/screen2_screen/Screen2View.hpp>
-#include <gui/screen2_screen/Screen2Presenter.hpp>
-#include <gui/screen3_screen/Screen3View.hpp>
-#include <gui/screen3_screen/Screen3Presenter.hpp>
-#include <gui/screen4_screen/Screen4View.hpp>
-#include <gui/screen4_screen/Screen4Presenter.hpp>
-#include <gui/screen5_screen/Screen5View.hpp>
-#include <gui/screen5_screen/Screen5Presenter.hpp>
+#include <gui/serify_screen/SerifyView.hpp>
+#include <gui/serify_screen/SerifyPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -47,43 +37,30 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
  * Screen Transition Declarations
  */
 
-// Screen0
+// Boot
 
-void FrontendApplicationBase::gotoScreen0ScreenNoTransition()
+void FrontendApplicationBase::gotoBootScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen0ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoBootScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen0ScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoBootScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<Screen0View, Screen0Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<BootView, BootPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// FastTest
+// Test
 
-void FrontendApplicationBase::gotoFastTestScreenNoTransition()
+void FrontendApplicationBase::gotoTestScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoFastTestScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoTestScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoFastTestScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoTestScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<FastTestView, FastTestPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// SlowTest
-
-void FrontendApplicationBase::gotoSlowTestScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSlowTestScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoSlowTestScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<SlowTestView, SlowTestPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<TestView, TestPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
 // Setting
@@ -99,67 +76,15 @@ void FrontendApplicationBase::gotoSettingScreenNoTransitionImpl()
     touchgfx::makeTransition<SettingView, SettingPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-// Screen1
+// Serify
 
-void FrontendApplicationBase::gotoScreen1ScreenNoTransition()
+void FrontendApplicationBase::gotoSerifyScreenNoTransition()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoSerifyScreenNoTransitionImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
+void FrontendApplicationBase::gotoSerifyScreenNoTransitionImpl()
 {
-    touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Screen2
-
-void FrontendApplicationBase::gotoScreen2ScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen2ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen2ScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Screen3
-
-void FrontendApplicationBase::gotoScreen3ScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen3ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen3ScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Screen3View, Screen3Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Screen4
-
-void FrontendApplicationBase::gotoScreen4ScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen4ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen4ScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Screen4View, Screen4Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
-}
-
-// Screen5
-
-void FrontendApplicationBase::gotoScreen5ScreenNoTransition()
-{
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen5ScreenNoTransitionImpl);
-    pendingScreenTransitionCallback = &transitionCallback;
-}
-
-void FrontendApplicationBase::gotoScreen5ScreenNoTransitionImpl()
-{
-    touchgfx::makeTransition<Screen5View, Screen5Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<SerifyView, SerifyPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

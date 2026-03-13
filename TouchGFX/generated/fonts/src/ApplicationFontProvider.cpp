@@ -31,14 +31,14 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         // courbd_40_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     case Typography::DISPLAY:
-        // verdanab_20_4bpp
+        // verdanab_30_2bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     case Typography::MODE:
-        // verdanab_20_4bpp
-        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
-    case Typography::KEYBOARD:
-        // verdana_20_4bpp
+        // verdanab_25_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[8]);
+    case Typography::KEYBOARD:
+        // verdana_20_2bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[9]);
     default:
         return 0;
     }

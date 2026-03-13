@@ -42,7 +42,8 @@ extern DAC_HandleTypeDef hdac;
 void MX_DAC_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+uint16_t calc_dac_value(float target_voltage);
+uint32_t voltageToDAC(float voltage);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

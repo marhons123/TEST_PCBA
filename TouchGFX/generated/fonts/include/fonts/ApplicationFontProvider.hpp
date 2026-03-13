@@ -34,10 +34,10 @@ struct TypographyFontIndex
     static const touchgfx::FontId MAIN = 4;          // STZHONGS_TTF_25_4bpp
     static const touchgfx::FontId OK_NG = 5;         // STZHONGS_TTF_120_4bpp
     static const touchgfx::FontId TITLE = 6;         // courbd_40_4bpp
-    static const touchgfx::FontId DISPLAY = 7;       // verdanab_20_4bpp
-    static const touchgfx::FontId MODE = 7;          // verdanab_20_4bpp
-    static const touchgfx::FontId KEYBOARD = 8;      // verdana_20_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 9;
+    static const touchgfx::FontId DISPLAY = 7;       // verdanab_30_2bpp
+    static const touchgfx::FontId MODE = 8;          // verdanab_25_4bpp
+    static const touchgfx::FontId KEYBOARD = 9;      // verdana_20_2bpp
+    static const uint16_t NUMBER_OF_FONTS = 10;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider
