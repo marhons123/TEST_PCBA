@@ -14,8 +14,8 @@
 /* 静态函数 */
 static void norflash_wait_busy(void);               /* 等待空闲 */
 static void norflash_send_address(uint32_t address);/* 发送地址 */
-static void norflash_write_page(uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* 写入page */
-static void norflash_write_nocheck(uint8_t *pbuf, uint32_t addr, uint16_t datalen); /* 写flash,不带擦除 */
+static void norflash_write_page(const uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* 写入page */
+static void norflash_write_nocheck(const uint8_t *pbuf, uint32_t addr, uint16_t datalen); /* 写flash,不带擦除 */
 
 uint16_t g_norflash_type = W25Q256;                /* 默认是W25Q256 */
 
@@ -224,7 +224,7 @@ void norflash_read(uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
  * @param       datalen : 要写入的字节数(最大256),该数不应该超过该页的剩余字节数!!!
  * @retval      无
  */
-static void norflash_write_page(uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
+static void norflash_write_page(const uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
     uint16_t i;
 
     norflash_write_enable();                    /* 写使能 */
@@ -252,7 +252,7 @@ static void norflash_write_page(uint8_t *pbuf, uint32_t addr, uint16_t datalen) 
  * @param       datalen : 要写入的字节数(最大65535)
  * @retval      无
  */
-static void norflash_write_nocheck(uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
+static void norflash_write_nocheck(const uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
     uint16_t pageremain;
     pageremain = 256 - addr % 256;  /* 单页剩余的字节数 */
 
@@ -300,7 +300,7 @@ static void norflash_write_nocheck(uint8_t *pbuf, uint32_t addr, uint16_t datale
  */
 uint8_t g_norflash_buf[4096];   /* 扇区缓存 */
 
-void norflash_write(uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
+void norflash_write(const uint8_t *pbuf, uint32_t addr, uint16_t datalen) {
     uint32_t secpos;
     uint16_t secoff;
     uint16_t secremain;

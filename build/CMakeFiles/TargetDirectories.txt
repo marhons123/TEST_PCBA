@@ -1,0 +1,3 @@
+D:/Codex/Test_PCBA/build/CMakeFiles/Test_PCBA.elf.dir
+D:/Codex/Test_PCBA/build/CMakeFiles/edit_cache.dir
+D:/Codex/Test_PCBA/build/CMakeFiles/rebuild_cache.dir

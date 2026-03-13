@@ -72,7 +72,7 @@ void norflash_write_sr(uint8_t regno,uint8_t sr);   /* Ğ´×´Ì¬¼Ä´æÆ÷ */
 void norflash_erase_chip(void);             /* ÕûÆ¬²Á³ı */
 void norflash_erase_sector(uint32_t saddr); /* ÉÈÇø²Á³ı */
 void norflash_read(uint8_t *pbuf, uint32_t addr, uint16_t datalen);     /* ¶ÁÈ¡flash */
-void norflash_write(uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* Ğ´Èëflash */
+void norflash_write(const uint8_t *pbuf, uint32_t addr, uint16_t datalen);    /* Ğ´Èëflash */
 
 #endif
 

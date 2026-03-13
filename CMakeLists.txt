@@ -49,11 +49,25 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(Core/Inc TouchGFX/App TouchGFX/target/generated TouchGFX/target Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32F4xx/Include Drivers/CMSIS/Include Middlewares/ST/touchgfx/framework/include TouchGFX/generated/fonts/include TouchGFX/generated/gui_generated/include TouchGFX/generated/images/include TouchGFX/generated/texts/include TouchGFX/generated/videos/include TouchGFX/gui/include Drivers/BSP/TEST Drivers/BSP/KEY Drivers/BSP/LED Drivers/BSP/SDRAM Drivers/BSP/NORFLASH Drivers/BSP/SYS Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 Drivers/BSP/LCD FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src Drivers/BSP/NORFLASHMANAGER Drivers/BSP/SOFTI2C)
+include_directories(Core/Inc TouchGFX/App TouchGFX/target/generated TouchGFX/target Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32F4xx/Include Drivers/CMSIS/Include Middlewares/ST/touchgfx/framework/include TouchGFX/generated/fonts/include TouchGFX/generated/gui_generated/include TouchGFX/generated/images/include TouchGFX/generated/texts/include TouchGFX/generated/videos/include TouchGFX/gui/include Drivers/BSP/TEST Drivers/BSP/KEY Drivers/BSP/LED Drivers/BSP/SDRAM Drivers/BSP/NORFLASH Drivers/BSP/SYS Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 Drivers/BSP/LCD FATFS/Target FATFS/App Middlewares/Third_Party/FatFs/src Drivers/BSP/NORFLASHMANAGER Drivers/BSP/SOFTI2C Middlewares/ST/touchgfx/framework/include/platform/hal/simulator/sdl2/vendor)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx)
 
 file(GLOB_RECURSE SOURCES "Middlewares/*.*" "TouchGFX/*.*" "Core/*.*" "FATFS/*.*" "Drivers/*.*")
+
+set(FILTERED_SOURCES "")
+foreach(src IN LISTS SOURCES)
+    string(REPLACE "\\" "/" normalized_src "${src}")
+    string(FIND "${normalized_src}" "/platform/hal/simulator/sdl2/" index_sdl2)
+    string(FIND "${normalized_src}" "/platform/driver/touch/SDL2TouchController.cpp" index_sdl2_touch)
+    string(FIND "${normalized_src}" "/TouchGFX/simulator/" index_tgfx_sim)
+    string(FIND "${normalized_src}" "/TouchGFX/generated/simulator/" index_tgfx_gen_sim)
+    string(FIND "${normalized_src}" "/touchgfx_backup/" index_tgfx_backup)
+    if(index_sdl2 EQUAL -1 AND index_sdl2_touch EQUAL -1 AND index_tgfx_sim EQUAL -1 AND index_tgfx_gen_sim EQUAL -1 AND index_tgfx_backup EQUAL -1)
+        list(APPEND FILTERED_SOURCES "${src}")
+    endif()
+endforeach()
+set(SOURCES "${FILTERED_SOURCES}")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/)
 

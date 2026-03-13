@@ -103,6 +103,8 @@ extern "C"
         // Set task tag in order to have the "IdleTaskHook" function called when the idle task is
         // switched in/out. Used solely for measuring MCU load, and can be removed if MCU load
         // readout is not needed.
+#if defined(configUSE_APPLICATION_TASK_TAG) && (configUSE_APPLICATION_TASK_TAG == 1)
         vTaskSetApplicationTaskTag(NULL, IdleTaskHook);
+#endif
     }
 }
